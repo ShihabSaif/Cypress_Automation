@@ -1,0 +1,81 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-10-24T17:39:12.565Z",
+    "end": "2023-10-24T17:39:20.593Z",
+    "duration": 8028,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "bdb05660-0158-4f05-a321-865dcde65ff4",
+      "title": "",
+      "fullFile": "cypress\\e2e\\test1.cy.js",
+      "file": "cypress\\e2e\\test1.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "TP Portal login",
+          "fullTitle": "TP Portal login",
+          "timedOut": null,
+          "duration": 6175,
+          "state": "passed",
+          "speed": "medium",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "loginPage.navigate();\nloginPage.username();\nloginPage.password();\nloginPage.submitBtn();\nloginPage.otp();\nloginPage.confirmBtn();\nloginPage.welcomeAfterLogin();",
+          "err": {},
+          "uuid": "0291f0a4-8caf-4f86-bcba-b12a2d206ddf",
+          "parentUUID": "bdb05660-0158-4f05-a321-865dcde65ff4",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [
+        "0291f0a4-8caf-4f86-bcba-b12a2d206ddf"
+      ],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 6175,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}
