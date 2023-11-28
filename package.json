@@ -9,11 +9,20 @@
   "author": "DB",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^13.3.2"
+    "cypress": "^13.6.0"
   },
   "dependencies": {
     "mochawesome": "^7.1.3",
     "mochawesome-merge": "^4.3.0",
     "mochawesome-report-generator": "^6.2.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShihabSaif/Cypress_Automation.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/ShihabSaif/Cypress_Automation/issues"
+  },
+  "homepage": "https://github.com/ShihabSaif/Cypress_Automation#readme"
 }
