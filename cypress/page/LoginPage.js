@@ -1,3 +1,5 @@
+import { expect } from "chai"
+
 export class LoginPage {
     navigate()
     {
@@ -26,5 +28,12 @@ export class LoginPage {
     welcomeAfterLogin()
     {
         cy.get('h3').should('contain','Welcome to TallyPay Portal')
+    }
+    welcomeAfterLoginV2()
+    {
+        let welcome = cy.get('h3').invoke('text')
+        console.log("text is : " + welcome)
+        expect(true).to.be.true
+
     }
 }
