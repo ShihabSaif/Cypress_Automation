@@ -1,7 +1,7 @@
 import { expect } from "chai"
 
 export class LoginPage {
-    tp_portal_link = 'http://10.9.0.77:5333/#/login'
+    tp_portal_link = 'http://10.9.0.77:5334/#/login'
     username_textbot = '.login-form > :nth-child(2) > :nth-child(1) > .form-control'
     password_textbox = ':nth-child(2) > .form-control'
     submit_button = '.login-form > :nth-child(2) > .btn-container > .btn'
