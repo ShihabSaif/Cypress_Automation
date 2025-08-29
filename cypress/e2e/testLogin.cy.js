@@ -1,13 +1,7 @@
-import { LoginPage } from "../page/LoginPage"
-
-const loginPage = new LoginPage()
-
-it('TP Portal login', function(){
-    loginPage.navigate()
-    loginPage.username("shihab")
-    loginPage.password("Shihab@111!")
-    loginPage.submitBtn()
-    loginPage.otp()
-    loginPage.confirmBtn()
-    loginPage.welcomeAfterLogin()
+describe("TP Portal login", () => {
+  it("logs in successfully", () => {
+    cy.login()
+    cy.visit("/") // optional - dashboard landing
+    cy.contains("Welcome to TallyPay Portal") // sanity check
+  })
 })

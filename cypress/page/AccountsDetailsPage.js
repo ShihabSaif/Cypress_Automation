@@ -5,13 +5,24 @@ export class AccountsDetailsPage{
 
     clickAccountsOption()
     {
-        cy.get(this.AccountsOption).click()
+        cy.contains('span.app-menu__label', 'Accounts').click()
         cy.wait(2000)
     }
 
     clickAccountsDetailsOption()
     {
-        cy.get(this.AccountsDetailsOption).click()
+        cy.contains('a.treeview-item', 'Accounts Detail').click()
+        cy.wait(2000)
+    }
+
+    walletInput()
+    {
+        cy.get('input[type="text"]').first().type('01621215877');
+        cy.wait(2000)
+    }
+    submitButton()
+    {
+        cy.contains('button', 'Search').click();
         cy.wait(2000)
     }
 }

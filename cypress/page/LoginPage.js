@@ -7,6 +7,8 @@ export class LoginPage {
     submit_button = '.login-form > :nth-child(2) > .btn-container > .btn'
     otp_textbox = '.login-form > :nth-child(2) > :nth-child(2) > .input-group > .form-control'
     confirm_button = '.login-form > :nth-child(2) > .btn-container > .btn'
+    AccountsOption = ':nth-child(3) > .app-menu__item'
+    AccountsDetailsOption = '.is-expanded > .treeview-menu > :nth-child(1) > .treeview-item'
 
     navigate()
     {
@@ -43,11 +45,5 @@ export class LoginPage {
         cy.get('h3').should('contain','Welcome to TallyPay Portal')
         cy.wait(2000)
     }
-    welcomeAfterLoginV2()
-    {
-        let welcome = cy.get('h3').invoke('text')
-        console.log("text is : " + welcome)
-        expect(true).to.be.true
-        cy.wait(2000)
-    }
+
 }
