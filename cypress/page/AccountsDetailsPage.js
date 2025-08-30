@@ -25,4 +25,14 @@ export class AccountsDetailsPage{
         cy.contains('button', 'Search').click();
         cy.wait(2000)
     }
+    txnInfoDetailsButton()
+    {
+        cy.contains('a', 'Txn Info').click();
+        cy.wait(2000)
+    }
+    walletInformationClick()
+    {
+        cy.get('i.fas.fa-external-link-alt').parent().click()
+        cy.wait(2000)
+    }
 }
