@@ -13,7 +13,7 @@ export class AccountsDetailsPage{
 
     walletInput()
     {
-        cy.get('input[type="text"]').first().type('01621215877');
+        cy.get('input[type="text"]').first().type("01765841854");
     }
     submitButton()
     {
@@ -22,6 +22,12 @@ export class AccountsDetailsPage{
     txnInfoDetailsButton()
     {
         cy.contains('a', 'Txn Info').click();
+    }
+    txnTypeDropdown()
+    {
+        cy.get('select.form-control:not(.form-control-sm)').eq(0)
+        .select('CASH_IN_FROM_CARD')
+        .should('have.value', 'CASH_IN_FROM_CARD')
     }
     walletInformationClick()
     {

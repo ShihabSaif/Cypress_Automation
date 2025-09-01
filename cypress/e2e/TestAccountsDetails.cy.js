@@ -14,6 +14,7 @@ describe("Account Details Section", () => {
     accountsDetailspage.walletInput()
     accountsDetailspage.submitButton()
     accountsDetailspage.txnInfoDetailsButton()
+    accountsDetailspage.txnTypeDropdown()
     accountsDetailspage.walletInformationClick()
   })
 })

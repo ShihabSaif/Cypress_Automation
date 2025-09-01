@@ -26,9 +26,9 @@ export class LoginPage {
     {
         cy.get(this.submit_button).click()  //submit button
     }
-    otp(otp_value)
+    otp(otp)
     {
-        cy.get(this.otp_textbox).type(otp_value) //otp
+        cy.get(this.otp_textbox).type(otp) //otp
     }
     confirmBtn()
     {
